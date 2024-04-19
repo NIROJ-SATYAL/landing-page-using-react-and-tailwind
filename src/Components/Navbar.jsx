@@ -1,8 +1,14 @@
 
 import logo from '../assets/logo.png'
 import { navItems } from '../constants'
+import {Menu , X} from 'lucide-react'
+import { useState } from 'react'
 
 const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false)
+    const handleClick = () => {
+        setIsOpen(!isOpen)
+    }
   return (
     <nav className="sticky top-0 py-3 z-50  backdrop:blur-lg bg-slate-500 border border-b ">
                 <div className="container px-3 mx-auto relative text-sm">
@@ -26,14 +32,39 @@ const Navbar = () => {
 
             <div className="hidden lg:flex justify-between items-center">
 
-                <button className="bg-gradient-to-r from-orange-400 to-orange-800 py-2 px-3 rounded-2xl ">Sign In</button>
+                <button className="bg-gradient-to-r from-orange-400 to-orange-800 py-2 px-3  border rounded-2xl ">Sign In</button>
                 <button className=" py-2 px-3 rounded-2xl ml-3  bg-gradient-to-r from-orange-400 to-orange-800">create an account</button>
 
             </div>
 
             <div className="lg:hidden">
-                hi
+                <button onClick={handleClick} className="cursor-pointer">
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
             </div>
+
+                </div>
+
+                <div className={`lg:hidden fixed right-0 w-full h-auto bg-slate-500 bg-opacity-90 ${isOpen ? ' flex transition-all duration-30 ease-in-out transform translate-y-3' : 'hidden'} flex-col p-10 space-y-10 items-center  z-20 `}>
+                    <ul>
+                        {navItems.map((item, index) => (
+                            <li className='cursor-pointer py-4  text-1xl  font-bold text-black ' key={index}>
+                                {
+                                    item.label
+                                }
+                            </li>
+                        ))}
+                    </ul>
+
+
+                    <div className="flex justify-between items-center">
+
+
+                    <button className="bg-gradient-to-r from-orange-400 to-orange-800 py-2 px-3  border rounded-2xl ">Sign In</button>
+                <button className=" py-2 px-3 rounded-2xl ml-3  bg-gradient-to-r from-orange-400 to-orange-800">create an account</button>
+
+                    </div>
+               
 
                 </div>
     </div>
