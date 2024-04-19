@@ -10,7 +10,7 @@ const Navbar = () => {
         setIsOpen(!isOpen)
     }
   return (
-    <nav className="sticky top-0 py-3 z-50  backdrop:blur-lg bg-slate-500 border border-b ">
+    <nav className="sticky top-0 py-3 z-50  backdrop:blur-lg bg-neutral-800 border border-b ">
                 <div className="container px-3 mx-auto relative text-sm">
 
         <div className="flex items-center justify-between">
@@ -45,10 +45,10 @@ const Navbar = () => {
 
                 </div>
 
-                <div className={`lg:hidden fixed right-0 w-full h-auto bg-slate-500 bg-opacity-90 ${isOpen ? ' flex transition-all duration-30 ease-in-out transform translate-y-3' : 'hidden'} flex-col p-10 space-y-10 items-center  z-20 `}>
+                <div className={`lg:hidden fixed right-0 w-full h-auto bg-neutral-500 bg-opacity-90 ${isOpen ? ' flex transition-all duration-30 ease-in-out transform translate-y-3' : 'hidden'} flex-col p-10 space-y-10 items-center  z-20 `}>
                     <ul>
                         {navItems.map((item, index) => (
-                            <li className='cursor-pointer py-4  text-1xl  font-bold text-black ' key={index}>
+                            <li className='cursor-pointer py-4  text-1xl  font-bold text-white' key={index}>
                                 {
                                     item.label
                                 }
