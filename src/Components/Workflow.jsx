@@ -24,7 +24,7 @@ const Workflow = () => {
 
             {checklistItems.map((item, index) => {
                 return (
-                    <div key={index} className="flex  mb-1 lg:mb-12">
+                    <div key={index} className="flex  mb-1 lg:mb-1">
                     
                 
                   <div className="flex mx-2 h-10 w-10 p-2 justify-center items-center rounded-full bg-neutral-900 text-orange-800">
@@ -32,7 +32,7 @@ const Workflow = () => {
                   </div>
 
                   <div>
-                    <h4 className="text-lg ml-4 mt-1 mb-6">{item.title}</h4>
+                    <h4 className="text-lg ml-4 mt-1 ">{item.title}</h4>
 
                     <p className="ml-4 text-neutral-500 mb-20">{item.description}</p>
                   </div>
