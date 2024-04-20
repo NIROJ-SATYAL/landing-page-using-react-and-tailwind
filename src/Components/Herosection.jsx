@@ -6,9 +6,9 @@ const Herosection = () => {
     <div className=" container  lg:max-w-7xl mx-auto px-6 pt-20 ">
       <div className="flex flex-col items-center mt-6 lg:mt-20">
         <h1 className="text-4xl sm:text-6xl lg:text-8xl tracking-wide text-center">
-          My Name is{" "}
+        Persist. Believe. Achieve.
           <span className="bg-gradient-to-r from-orange-400 to-orange-700 text-transparent bg-clip-text">
-            Niroj Satyal
+          Never settle. Evolve
           </span>
         </h1>
 
