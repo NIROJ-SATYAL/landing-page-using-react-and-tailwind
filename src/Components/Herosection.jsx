@@ -12,7 +12,7 @@ const Herosection = () => {
           </span>
         </h1>
 
-        <p className="text-lg sm:text-xl lg:text-2xl text-center mt-6 lg:mt-20">
+        <p className="text-lg sm:text-xl lg:text-2xl text-center mt-6 lg:mt-14 mb-6">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eius
           delectus fugit minus, ipsa voluptates corporis quasi quidem officia
           fugiat voluptatem ullam, commodi totam! Molestiae facilis amet,
@@ -21,7 +21,7 @@ const Herosection = () => {
           voluptates voluptate corrupti numquam! Obcaecati, officiis provident.
         </p>
 
-        <div className="flex items-center justify-center lg:max-w-4xl mt-10 lg:mt-14">
+        <div className="flex items-center justify-center lg:max-w-4xl mt-5 lg:mt-10">
           <button className="bg-gradient-to-r from-orange-400 to-orange-700 text-white px-6 py-2 rounded-lg mt-6 lg:mt-20">
             start for free
           </button>
@@ -30,7 +30,7 @@ const Herosection = () => {
           </button>
         </div>
 
-        <div className="flex justify-center   mt-10">
+        <div className="flex justify-center   mt-20">
           <video
             src={video1}
             className="rounded-lg w-1/2 border mx-2 my-4 border-orange-300"

@@ -6,7 +6,7 @@ const Features = () => {
     <div className="container lg:mx-w-7xl mx-auto my-5 px-6  ">
       <div className="relative  mt-20 w-full border-b border-orange-400 min-h-[800px] ">
         <div className="text-center">
-          <span className="bg-neutral-600 text-orange-400 text-lg font-large px-2 py-3 rounded-lg">
+          <span className=" text-3xl font-large px-2 py-3 rounded-lg bg-gradient-to-r from-orange-400 to-orange-600 text-transparent bg-clip-text">
             Features
           </span>
 

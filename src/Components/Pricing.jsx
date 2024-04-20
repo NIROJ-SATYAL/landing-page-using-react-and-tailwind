@@ -6,7 +6,7 @@ const Pricing = () => {
 
     <div className="container lg:mx-w-7xl mx-auto my-5 px-6  ">
     <div className="mt-20">
-      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide bg-gradient-to-r from-orange-400 to-orange-600 text-transparent bg-clip-text py-6">
         Pricing
       </h2>
       <div className="flex flex-wrap">
